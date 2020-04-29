@@ -6,8 +6,8 @@
   #error "Missing WIFI_SSID"
 #endif
 
-#ifndef WIFI_PASWORD
-  #error "Missing WIFI_PASWORD"
+#ifndef WIFI_PASSWORD
+  #error "Missing WIFI_PASSWORD"
 #endif
 
 WiFiUDP ntpUDP;
@@ -16,7 +16,7 @@ NTPClient timeClient(ntpUDP);
 void setup() {
   Serial.begin(9600);
 
-  WiFi.begin(WIFI_SSID, WIFI_PASWORD);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
