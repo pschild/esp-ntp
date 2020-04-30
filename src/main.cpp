@@ -7,7 +7,7 @@
 #endif
 
 #ifdef WIFI_SSID
-  #error "WIFI_SSID equals " WIFI_SSID
+  #error STRING(WIFI_SSID)
 #endif
 
 #ifndef WIFI_PASSWORD
