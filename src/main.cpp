@@ -6,6 +6,10 @@
   #error "Missing WIFI_SSID"
 #endif
 
+#ifdef WIFI_SSID
+  #error "WIFI_SSID equals " WIFI_SSID
+#endif
+
 #ifndef WIFI_PASSWORD
   #error "Missing WIFI_PASSWORD"
 #endif
