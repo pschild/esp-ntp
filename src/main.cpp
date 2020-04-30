@@ -6,10 +6,6 @@
   #error "Missing WIFI_SSID"
 #endif
 
-#ifdef WIFI_SSID
-  #error STRING(WIFI_SSID)
-#endif
-
 #ifndef WIFI_PASSWORD
   #error "Missing WIFI_PASSWORD"
 #endif
