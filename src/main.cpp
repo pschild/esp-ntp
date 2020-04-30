@@ -17,6 +17,10 @@ void setup() {
   Serial.begin(9600);
 
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  Serial.print("Connecting to ");
+  Serial.println(WIFI_SSID);
+  Serial.print("Using PW ");
+  Serial.print(WIFI_PASSWORD);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
