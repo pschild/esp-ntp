@@ -28,5 +28,6 @@ void setup() {
 void loop() {
   timeClient.update();
   Serial.println(timeClient.getFormattedTime());
+  Serial.println("yyy");
   delay(1000);
 }
