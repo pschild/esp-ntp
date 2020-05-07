@@ -10,6 +10,10 @@
   #error "Missing WIFI_PASSWORD"
 #endif
 
+#ifndef VERSION
+  #define VERSION "local-build"
+#endif
+
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP);
 
